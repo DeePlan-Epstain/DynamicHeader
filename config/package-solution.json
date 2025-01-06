@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "dynamic-header-client-side-solution",
+    "id": "9c78e88a-ceea-4676-b12b-55711cc48e0e",
+    "version": "0.9.9.9",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "dynamic-header description"
+      },
+      "longDescription": {
+        "default": "dynamic-header description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "dynamic-header Feature",
+        "description": "The feature that activates elements of the dynamic-header solution.",
+        "id": "fac638ea-b6c9-4700-82af-fbddf0f11e36",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/dynamic-header.sppkg"
+  }
+}

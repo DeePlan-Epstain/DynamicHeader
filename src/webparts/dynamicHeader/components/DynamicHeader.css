@@ -1,0 +1,264 @@
+/* HeaderStyle */
+.TitleHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.TitleHeader .TitleHeaderContainer {
+  display: block;
+  position: relative;
+  float: right;
+  height: 100%;
+  background-image: url("../Assets/TitleHeader.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.TitleHeader .TitleHeaderContainer .TitleHeaderText {
+  display: block;
+  position: relative;
+  width: 94%;
+  padding: 30px;
+  text-align: right;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  animation: EOMoveInText 2s ease-in both;
+  animation-delay: 1.9s;
+}
+
+@keyframes EOMoveIn {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes EOMoveIn {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes EOMoveInMobile {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes EOMoveInMobile {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes EOMoveInText {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes EOMoveInText {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes rotatePlaceholder {
+  0%,
+  5% {
+    transform: rotate(-45deg);
+  }
+  100%,
+  12% {
+    transform: rotate(-405deg);
+  }
+}
+@keyframes animateErrorIcon {
+  0% {
+    transform: rotateX(100deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+@keyframes animateXLeft {
+  0%,
+  65% {
+    left: 82px;
+    top: 95px;
+    width: 0;
+  }
+  84% {
+    left: 14px;
+    top: 33px;
+    width: 47px;
+  }
+  100% {
+    left: 17px;
+    top: 37px;
+    width: 47px;
+  }
+}
+@keyframes animateXRight {
+  0%,
+  65% {
+    right: 82px;
+    top: 95px;
+    width: 0;
+  }
+  84% {
+    right: 14px;
+    top: 33px;
+    width: 47px;
+  }
+  100% {
+    right: 16px;
+    top: 37px;
+    width: 47px;
+  }
+}
+
+/* Query */
+@media only screen and (min-width: 1285px) {
+  .TitleHeader {
+    height: 120px;
+  }
+
+  .TitleHeader .EOLogoContainer {
+    display: block;
+  }
+
+  .TitleHeader .TitleHeaderContainer {
+    width: 70%;
+    animation: EOMoveIn 2s ease-in both;
+  }
+
+  .TitleHeader .TitleHeaderContainer .TitleHeaderText {
+    font-size: 32px;
+    text-wrap: nowrap;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1284px) {
+  .TitleHeader {
+    height: 115px;
+  }
+
+  .TitleHeader .EOLogoContainer {
+    display: block;
+  }
+
+  .TitleHeader .TitleHeaderContainer {
+    width: 70%;
+    animation: EOMoveIn 2s ease-in both;
+  }
+
+  .TitleHeader .TitleHeaderContainer .TitleHeaderText {
+    font-size: 32px;
+    text-wrap: nowrap;
+  }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 781px) {
+  .TitleHeader {
+    height: 110px;
+  }
+
+  .TitleHeader .EOLogoContainer {
+    display: block;
+  }
+
+  .TitleHeader .TitleHeaderContainer {
+    width: 70%;
+  }
+
+  .TitleHeader .TitleHeaderContainer .TitleHeaderText {
+    font-size: 32px;
+    text-wrap: nowrap;
+  }
+}
+
+@media only screen and (max-width: 780px) and (min-width: 576px) {
+  .TitleHeader {
+    height: 100px;
+  }
+
+  .TitleHeader .EOLogoContainer {
+    display: block;
+  }
+
+  .TitleHeader .TitleHeaderContainer {
+    width: 70%;
+  }
+
+  .TitleHeader .TitleHeaderContainer .TitleHeaderText {
+    font-size: 32px;
+    text-wrap: nowrap;
+  }
+}
+
+@media only screen and (min-width: 461px) and (max-width: 575px) {
+  .TitleHeader {
+    height: 100px;
+  }
+
+  .TitleHeader .EOLogoContainer {
+    display: none;
+  }
+
+  .TitleHeader .TitleHeaderContainer {
+    width: 100%;
+  }
+
+  .TitleHeader .TitleHeaderContainer .TitleHeaderText {
+    font-size: 32px;
+    text-wrap: nowrap;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .TitleHeader {
+    height: 90px;
+  }
+
+  .TitleHeader .EOLogoContainer {
+    display: none;
+  }
+
+  .TitleHeader .TitleHeaderContainer {
+    width: 100%;
+  }
+
+  .TitleHeader .TitleHeaderContainer .TitleHeaderText {
+    font-size: 26px;
+    text-wrap: nowrap;
+  }
+}

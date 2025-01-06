@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.17.1",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.18.2",
+    "libraryName": "dynamic-header",
+    "libraryId": "9c78e88a-ceea-4676-b12b-55711cc48e0e",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "dynamic-header",
+    "solutionShortDescription": "dynamic-header description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
